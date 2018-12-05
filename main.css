@@ -32,6 +32,14 @@
     padding: 10px;
 }
 
+#first {
+    display: none;
+}
+
+div.recipe-1:hover + #first {
+    display: inherit;
+}
+
 p {
     font-size: 20px;
 }
