@@ -21,7 +21,7 @@
     background-color: DodgerBlue;
 }
 
-.recipe-1, .recipe-2, .recipe-3, .recipe-4 {
+.recipeSour, .recipeSweet {
     width: auto;
     background-color: #f1f1f1;
     margin: 10px;
@@ -32,44 +32,31 @@
     padding: 10px;
 }
 
-#first {
-    display: none;
+.recipeSour:hover::after {
+    content: 'For the brave ones!';
+    font-family: 'Unlock', cursive;
 }
 
-div.recipe-1:hover + #first {
-    display: inherit;
+.recipeSweet:hover::after {
+    content: 'For those with a sweet tooth!';
+    font-family: 'Unlock', cursive;
 }
 
 p {
     font-size: 20px;
 }
 
-#empanadas {
+img {
     float: right;
     width: 250px;
     height: 250px;
     border-radius: 8px;
+    transition: width 1s, height 1s;
 }
 
-#panDeBono {
-    float: right;
-    width: 250px;
-    height: 250px;
-    border-radius: 8px;
-}
-
-#paisa {
-    float: right;
-    width: 250px;
-    height: 250px;
-    border-radius: 8px;
-}
-
-#bocachico {
-    float: right;
-    width: 250px;
-    height: 250px;
-    border-radius: 8px;
+img:hover {
+    width: 300px;
+    height: 200px;
 }
 
 .footer {
